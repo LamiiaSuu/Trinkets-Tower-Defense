@@ -167,7 +167,6 @@ GameObject:
   - component: {fileID: 61060065}
   - component: {fileID: 61060063}
   - component: {fileID: 61060066}
-  - component: {fileID: 61060067}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Untagged
@@ -331,18 +330,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!122 &61060067
-Halo:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 61060061}
-  m_Enabled: 1
-  m_Color:
-    serializedVersion: 2
-    rgba: 4286611584
-  m_Size: 5
 --- !u!1 &163818808
 GameObject:
   m_ObjectHideFlags: 0

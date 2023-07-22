@@ -12,12 +12,13 @@ public class EnemyMovement : MonoBehaviour
 
     private Transform target;
     private int pathIndex = 0;
+    private float tempDistance;
 
     // Start is called before the first frame update
     void Start()
     {
         target = LevelManager.main.path[pathIndex];
-        
+        tempDistance = Vector2.Distance(target.position, transform.position);
     }
 
     // Update is called once per frame
@@ -28,7 +29,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void FixedUpdate() {
 
-        if(Vector2.Distance(target.position, transform.position) <= 0.1f){
+        if(Vector2.Distance(target.position, transform.position) > tempDistance){
             pathIndex++;
             
 
@@ -42,7 +43,7 @@ public class EnemyMovement : MonoBehaviour
 
         Vector2 direction = (target.position - transform.position).normalized;
 
-
+        tempDistance = Vector2.Distance(target.position, transform.position);
         rb.velocity = direction*moveSpeed;
     }
 }

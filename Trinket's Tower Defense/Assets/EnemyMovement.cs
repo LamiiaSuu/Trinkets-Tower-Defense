@@ -7,9 +7,7 @@ public class EnemyMovement : MonoBehaviour
     [Header("References")]
     [SerializeField] private Rigidbody2D rb;
 
-    [Header("Attributes")]
     [SerializeField] private float moveSpeed = 10;
-
     private Transform target;
     private int pathIndex = 0;
     private float tempDistance;
@@ -28,7 +26,6 @@ public class EnemyMovement : MonoBehaviour
     }
 
     private void FixedUpdate() {
-
         if(Vector2.Distance(target.position, transform.position) > tempDistance){
             //if(transform.position != target.position){
             //    transform.position = target.position;

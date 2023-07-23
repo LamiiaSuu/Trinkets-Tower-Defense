@@ -45,6 +45,6 @@ public class EnemySpawner : MonoBehaviour
 
     private GameObject[] getRound(int roundNumber) {
         
-        return StandardRounds.getRoundEnemies;
+        return null;
     }
 }

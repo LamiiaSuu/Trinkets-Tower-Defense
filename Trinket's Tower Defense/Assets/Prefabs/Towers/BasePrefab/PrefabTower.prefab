@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3785587511057297481}
   - component: {fileID: 2197862184645399770}
   - component: {fileID: 2635463507973462805}
-  - component: {fileID: 2500094352499983582}
   m_Layer: 0
   m_Name: PrefabTower
   m_TagString: Untagged
@@ -99,33 +98,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isMouseOver: 0
---- !u!114 &2500094352499983582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3528550767908653586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd40a197846e6e4b909e1ffe90d75d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 0
-  attackSpeed: 0
-  attackRange: 0
-  attackType1: 0
-  attackType2: 0
-  attackType3: 0
-  strength: 0
-  dexterity: 0
-  constitution: 0
-  intelligence: 0
-  wisdom: 0
-  charisma: 0
-  perception: 0
-  upgradeMenu: {fileID: 0}
-  upgradeButton: {fileID: 0}
-  baseCost: 0
-  firstUpgradeCost: 0
-  currentTowerLevel: 0

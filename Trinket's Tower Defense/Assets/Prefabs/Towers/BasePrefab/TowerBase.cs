@@ -20,7 +20,6 @@ public class TowerBase : EntityBase
 
     [Header("Cost")]
     [SerializeField] protected int baseCost;
-    [SerializeField] protected int firstUpgradeCost;
 
     [Header("Status")]
     [SerializeField] protected TowerLevel currentTowerLevel;

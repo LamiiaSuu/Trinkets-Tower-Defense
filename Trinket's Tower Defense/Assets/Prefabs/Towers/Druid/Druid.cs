@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Druid : TowerBase
 {
-    private enum DruidCircle
+    private enum DruidSubclass
     {
         CircleOfTheLand,
         CircleOfTheMoon,
@@ -16,13 +16,12 @@ public class Druid : TowerBase
     }
 
     [Header("Druid Circle")]
-    [SerializeField] DruidCircle chosenDruidCircle;
+    [SerializeField] DruidSubclass chosenDruidCircle;
 
     // Start is called before the first frame update
     void Start()
     {
         perception += EnhancedPerception();
-
     }
 
     // Update is called once per frame

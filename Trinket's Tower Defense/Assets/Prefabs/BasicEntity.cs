@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static DamageTypes;
 
-public class Stats : MonoBehaviour
+public class BasicEntity : MonoBehaviour
 {
+    
     [Header("Attack")]
     [SerializeField] private int attackDamage;
     [SerializeField] private float attackSpeed;
@@ -29,26 +29,33 @@ public class Stats : MonoBehaviour
 
     [SerializeField] private int perception;
 
+    public enum DamageTypesList
+    {
+        Physical,
+        MagicalPhysical,
+        Fire,
+        Cold,
+        Lightning,
+        Poison,
+        Acid,
+        Necrotic,
+        Holy,
+        Psychic,
+        Force,
+        none
+    };
+
+
     // Start is called before the first frame update
     void Start()
     {
-        perception = CalculatePerception();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         
-    }
-
-    public int GetPerception()
-    {
-        return perception;
-    }
-
-    public void SetPerception(int value)
-    {
-        perception = value;
     }
 
     private int CalculatePerception()

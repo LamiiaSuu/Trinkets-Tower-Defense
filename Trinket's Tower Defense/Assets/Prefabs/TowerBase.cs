@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Tower_Base : MonoBehaviour
 {
-[Header("Cost")]
+    [Header("Cost")]
     [SerializeField] private int baseCost;
     [SerializeField] private int firstUpgradeCost;
 

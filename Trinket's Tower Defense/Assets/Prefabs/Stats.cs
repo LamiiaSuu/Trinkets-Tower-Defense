@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static DamageTypes;
 
-public class TowerBase : MonoBehaviour
+public class Stats : MonoBehaviour
 {
 
     [Header("Attack")]

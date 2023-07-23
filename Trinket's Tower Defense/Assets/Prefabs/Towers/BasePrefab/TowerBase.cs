@@ -5,14 +5,7 @@ using UnityEngine;
 
 public class TowerBase : EntityBase
 {
-    protected enum TowerLevel
-    {
-        Level1,
-        Level2,
-        Level3,
-        Level4,
-        Level5
-    }
+    protected int [] TowerLevel = {1, 2, 3, 4, 5};
 
     [Header("Upgrade")]
     [SerializeField] protected GameObject upgradeMenu;
@@ -21,9 +14,10 @@ public class TowerBase : EntityBase
     [Header("Cost")]
     [SerializeField] protected int baseCost;
 
-    [Header("Status")]
-    [SerializeField] protected TowerLevel currentTowerLevel;
+    [Header("Level")]
+    [SerializeField] protected int currentTowerLevel;
 
+    protected int baseTowerLevel = 1;
     protected int baseAttackDamage = 4;
     protected float baseAttackSpeed = 1.5f;
     protected float baseAttackRange = 3.5f;
@@ -37,6 +31,7 @@ public class TowerBase : EntityBase
     // Start is called before the first frame update
     void Start()
     {
+        currentTowerLevel = baseTowerLevel;
         strength = baseStrength;
         dexterity = baseDexterity;
         constitution = baseConstitution;
@@ -64,6 +59,14 @@ public class TowerBase : EntityBase
     protected void Upgrade()
     {
         // if(firstUpgradeCost > LevelManager.main.curreny) return;
-
+        /*
+            for (int i = 1; i < TowerLevel.Length; i++)
+            {
+                if (currentTowerLevel == TowerLevel[i])
+                {
+                    currentTowerLevel = TowerLevel[i + 1];
+                }
+            }
+        */
     }
 }

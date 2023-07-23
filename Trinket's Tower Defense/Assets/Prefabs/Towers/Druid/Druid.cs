@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Druid : TowerBase
+public class Druid_1 : TowerBase
 {
     private enum DruidSubclass
     {
+        none,
         CircleOfTheLand,
         CircleOfTheMoon,
         CircleOfDreams,
@@ -16,7 +17,7 @@ public class Druid : TowerBase
     }
 
     [Header("Druid Circle")]
-    [SerializeField] DruidSubclass chosenDruidCircle;
+    [SerializeField] DruidSubclass chosenDruidCircle = DruidSubclass.none;
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +38,23 @@ public class Druid : TowerBase
 
     void BeastShape()
     {
-
+        if (currentTowerLevel >= 2)
+        {
+        }
+        else 
+        {
+            return;
+        }
     }
 
+    void chooseDruidCircle()
+    {
+        if (currentTowerLevel >= 2)
+        {
+        }
+        else 
+        {
+            return;
+        }
+    }
 }

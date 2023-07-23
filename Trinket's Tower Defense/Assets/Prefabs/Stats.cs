@@ -1,19 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static DamageTypes;
 
 public class TowerBase : MonoBehaviour
 {
 
-    [Header("Tower Basics")]
-    [SerializeField] private int towerCost;
-
-    [Header("Attack Stats")]
+    [Header("Attack")]
     [SerializeField] private int attackDamage;
     [SerializeField] private float attackSpeed;
     [SerializeField] private float attackRange;
-    [SerializeField] private int attackType;
-
+    [SerializeField] private DamageTypesList attackType1;
+    [SerializeField] private DamageTypesList attackType2;
+    [SerializeField] private DamageTypesList attackType3;
     
     [Header("Stats")]
     [Range(8, 20)]

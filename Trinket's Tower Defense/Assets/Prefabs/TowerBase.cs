@@ -2,21 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DamageTypes : MonoBehaviour
+public class Tower_Base : MonoBehaviour
 {
-    public enum DamageTypesList
-    {
-        Physical,
-        Fire,
-        Cold,
-        Lightning,
-        Poison,
-        Acid,
-        Necrotic,
-        Holy,
-        Psychic,
-        Force
-    };
+[Header("Cost")]
+    [SerializeField] private int baseCost;
+    [SerializeField] private int firstUpgradeCost;
 
     // Start is called before the first frame update
     void Start()

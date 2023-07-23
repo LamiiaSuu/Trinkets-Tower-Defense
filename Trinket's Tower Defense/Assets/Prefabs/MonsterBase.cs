@@ -7,14 +7,6 @@ public class MonsterBase : EntityBase
     [Header("Stats")]
     [SerializeField] private int health;
 
-    [Header("Attack")]
-    [SerializeField] private int attackDamage;
-    [SerializeField] private float attackSpeed;
-    [SerializeField] private float attackRange;
-    [SerializeField] private DamageTypesList attackType1;
-    [SerializeField] private DamageTypesList attackType2;
-    [SerializeField] private DamageTypesList attackType3;
-
     [Header("Defense")]
     [SerializeField] private int defense;
 

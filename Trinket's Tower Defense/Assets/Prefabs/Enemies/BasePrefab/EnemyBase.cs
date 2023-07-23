@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MonsterBase : EntityBase
+public class EnemyBase : EntityBase
 {   
     [Header("Stats")]
     [SerializeField] private int health;

@@ -7,6 +7,7 @@ public class DamageTypes : MonoBehaviour
     public enum DamageTypesList
     {
         Physical,
+        MagicalPhysical,
         Fire,
         Cold,
         Lightning,
@@ -15,7 +16,8 @@ public class DamageTypes : MonoBehaviour
         Necrotic,
         Holy,
         Psychic,
-        Force
+        Force,
+        none
     };
 
     // Start is called before the first frame update

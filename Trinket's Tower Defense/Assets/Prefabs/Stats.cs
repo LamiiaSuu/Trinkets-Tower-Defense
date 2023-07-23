@@ -5,7 +5,6 @@ using static DamageTypes;
 
 public class Stats : MonoBehaviour
 {
-
     [Header("Attack")]
     [SerializeField] private int attackDamage;
     [SerializeField] private float attackSpeed;
@@ -27,6 +26,9 @@ public class Stats : MonoBehaviour
     [SerializeField] private int wisdom;
     [Range(8, 20)]
     [SerializeField] private int charisma;
+
+    [Range(0, 20)]
+    [SerializeField] private int perception;
 
     // Start is called before the first frame update
     void Start()

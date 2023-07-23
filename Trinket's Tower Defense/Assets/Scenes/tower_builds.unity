@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2974641324005991646, guid: b44f392b44acc7b4b93c7e6b08bbc748, type: 3}
+      propertyPath: chosenDruidCircle
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4708460270983300877, guid: b44f392b44acc7b4b93c7e6b08bbc748, type: 3}
       propertyPath: m_Name
       value: PrefabDruid

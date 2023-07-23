@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static DamageTypes;
 
-public class MonsterBase : MonoBehaviour
+public class MonsterBase : EntityBase
 {   
     [Header("Stats")]
     [SerializeField] private int health;

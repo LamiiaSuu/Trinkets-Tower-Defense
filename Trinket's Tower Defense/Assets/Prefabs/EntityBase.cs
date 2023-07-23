@@ -4,6 +4,23 @@ using UnityEngine;
 
 public class EntityBase : MonoBehaviour
 {
+
+    public enum DamageTypesList
+    {
+        Physical,
+        MagicalPhysical,
+        Fire,
+        Cold,
+        Lightning,
+        Poison,
+        Acid,
+        Necrotic,
+        Holy,
+        Psychic,
+        Force,
+        none
+    };
+
     [Header("Attack")]
     [SerializeField] private int attackDamage;
     [SerializeField] private float attackSpeed;
@@ -28,23 +45,6 @@ public class EntityBase : MonoBehaviour
 
     [SerializeField] private int perception;
 
-    public enum DamageTypesList
-    {
-        Physical,
-        MagicalPhysical,
-        Fire,
-        Cold,
-        Lightning,
-        Poison,
-        Acid,
-        Necrotic,
-        Holy,
-        Psychic,
-        Force,
-        none
-    };
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -55,13 +55,5 @@ public class EntityBase : MonoBehaviour
     void Update()
     {
         
-    }
-
-    private int CalculatePerception()
-    {
-        int wis = wisdom;
-        int smarts = intelligence;
-
-        return (wis + smarts) / 2;
     }
 }

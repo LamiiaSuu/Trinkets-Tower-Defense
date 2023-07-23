@@ -1,10 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static Stats;
-using static DamageTypes;
 
-public class TowerBase : MonoBehaviour
+public class TowerBase : EntityBase
 {
     enum TowerLevel
     {

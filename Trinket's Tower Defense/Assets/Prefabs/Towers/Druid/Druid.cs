@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Druid_1 : TowerBase
+public class Druid : TowerBase
 {
     private enum DruidSubclass
     {
@@ -51,6 +51,7 @@ public class Druid_1 : TowerBase
     {
         if (currentTowerLevel >= 2)
         {
+            
         }
         else 
         {

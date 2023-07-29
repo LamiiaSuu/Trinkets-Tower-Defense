@@ -133,11 +133,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2391909265820969071, guid: 079449fb0b9fb144897bdfda8aba1a67, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.6
+      value: -9.41
       objectReference: {fileID: 0}
     - target: {fileID: 2391909265820969071, guid: 079449fb0b9fb144897bdfda8aba1a67, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.45
+      value: -1.66
       objectReference: {fileID: 0}
     - target: {fileID: 2391909265820969071, guid: 079449fb0b9fb144897bdfda8aba1a67, type: 3}
       propertyPath: m_LocalPosition.z
@@ -194,11 +194,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7089371894840622421, guid: dc9655031575bc34a856d4ec0eccf90b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.850092
+      value: -11.49
       objectReference: {fileID: 0}
     - target: {fileID: 7089371894840622421, guid: dc9655031575bc34a856d4ec0eccf90b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.943613
+      value: -4.48
       objectReference: {fileID: 0}
     - target: {fileID: 7089371894840622421, guid: dc9655031575bc34a856d4ec0eccf90b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -534,13 +534,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: SporesDruid
       objectReference: {fileID: 0}
+    - target: {fileID: 2968733781791052340, guid: 78a19027437f7534fbe1905c36b35d21, type: 3}
+      propertyPath: attackRange
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5958018537531075509, guid: 78a19027437f7534fbe1905c36b35d21, type: 3}
+      propertyPath: chosenDruidCircle
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8014471458426374967, guid: 78a19027437f7534fbe1905c36b35d21, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.7872458
+      value: 0.52
       objectReference: {fileID: 0}
     - target: {fileID: 8014471458426374967, guid: 78a19027437f7534fbe1905c36b35d21, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.506464
+      value: 0.51
       objectReference: {fileID: 0}
     - target: {fileID: 8014471458426374967, guid: 78a19027437f7534fbe1905c36b35d21, type: 3}
       propertyPath: m_LocalPosition.z
@@ -589,11 +597,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 769894142247943732, guid: 4c67b272712676c4f875d43402ea79f4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.0359874
+      value: -2.11
       objectReference: {fileID: 0}
     - target: {fileID: 769894142247943732, guid: 4c67b272712676c4f875d43402ea79f4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.49317956
+      value: 1.69
       objectReference: {fileID: 0}
     - target: {fileID: 769894142247943732, guid: 4c67b272712676c4f875d43402ea79f4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -626,6 +634,10 @@ PrefabInstance:
     - target: {fileID: 769894142247943732, guid: 4c67b272712676c4f875d43402ea79f4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3979224640994025142, guid: 4c67b272712676c4f875d43402ea79f4, type: 3}
+      propertyPath: chosenDruidCircle
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7778739172984457498, guid: 4c67b272712676c4f875d43402ea79f4, type: 3}
       propertyPath: m_Name

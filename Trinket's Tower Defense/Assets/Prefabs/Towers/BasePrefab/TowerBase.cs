@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEditor;
 
 public class TowerBase : EntityBase
 {
@@ -52,6 +53,12 @@ public class TowerBase : EntityBase
         wisdom = baseWisdom;
         charisma = baseCharisma;
         perception = CalculatePerception();
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Handles.color = Color.red;
+        Handles.DrawWireDisc(transform.position, transform.forward, attackRange);
     }
 
     // Update is called once per frame

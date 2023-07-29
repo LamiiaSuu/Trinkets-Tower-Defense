@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Druid : TowerBase
+public class DruidClass : MonoBehaviour
 {
     private enum DruidSubclass
     {
@@ -22,7 +22,7 @@ public class Druid : TowerBase
     // Start is called before the first frame update
     void Start()
     {
-        perception += EnhancedPerception();
+        
     }
 
     // Update is called once per frame
@@ -31,31 +31,25 @@ public class Druid : TowerBase
         
     }
 
-    int EnhancedPerception()
-    {
-        return ((perception / 100) * 15);
-    }
-
     void BeastShape()
     {
-        if (currentTowerLevel >= 2)
-        {
-        }
-        else 
-        {
-            return;
-        }
+    //    if (currentTowerLevel >= 2)
+    //    {
+    //    }
+    //    else 
+    //    {
+    //        return;
+    //    }
     }
 
     void chooseDruidCircle()
     {
-        if (currentTowerLevel >= 2)
-        {
-            
-        }
-        else 
-        {
-            return;
-        }
+      //  if (currentTowerLevel >= 2)
+      //  {
+      //    } 
+       //    else 
+    //    {
+    //        return;
+    //    }
     }
 }

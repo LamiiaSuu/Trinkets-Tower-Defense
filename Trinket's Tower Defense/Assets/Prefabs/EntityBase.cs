@@ -44,20 +44,18 @@ public class EntityBase : MonoBehaviour
     [SerializeField] protected int charisma;
     [SerializeField] protected int perception;
 
+    void Awake()
+    {
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        perception = CalculatePerception();
     }
 
     // Update is called once per frame
     void Update()
     {
         
-    }
-
-    protected int CalculatePerception()
-    {
-        return (wisdom + intelligence) / 2;
     }
 }

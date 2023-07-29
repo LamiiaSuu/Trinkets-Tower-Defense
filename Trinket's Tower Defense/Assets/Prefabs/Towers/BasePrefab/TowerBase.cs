@@ -17,10 +17,10 @@ public class TowerBase : EntityBase
     [Header("Level")]
     [SerializeField] protected int currentTowerLevel;
 
-    protected int baseTowerLevel = 1;
     protected int baseAttackDamage = 4;
     protected float baseAttackSpeed = 1.5f;
     protected float baseAttackRange = 3.5f;
+
     protected int baseStrength = 8;
     protected int baseDexterity = 8;
     protected int baseConstitution = 8;
@@ -29,21 +29,40 @@ public class TowerBase : EntityBase
     protected int baseCharisma = 8;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        currentTowerLevel = baseTowerLevel;
+        currentTowerLevel = TowerLevel[0];
         strength = baseStrength;
         dexterity = baseDexterity;
         constitution = baseConstitution;
         intelligence = baseIntelligence;
         wisdom = baseWisdom;
         charisma = baseCharisma;
+        perception = CalculatePerception();
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        currentTowerLevel = TowerLevel[0];
+        strength = baseStrength;
+        dexterity = baseDexterity;
+        constitution = baseConstitution;
+        intelligence = baseIntelligence;
+        wisdom = baseWisdom;
+        charisma = baseCharisma;
+        perception = CalculatePerception();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    protected int CalculatePerception()
+    {
+        return (wisdom + intelligence) / 2;
     }
 
     protected void OpenUpgradeMenu()

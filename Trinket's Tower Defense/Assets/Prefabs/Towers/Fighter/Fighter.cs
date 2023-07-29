@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fighter : TowerBase
+public class Fighter : MonoBehaviour
 {
     private enum FighterSubclass
     {

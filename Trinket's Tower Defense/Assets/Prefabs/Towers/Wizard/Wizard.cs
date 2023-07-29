@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Wizard : TowerBase
+public class Wizard : MonoBehaviour
 {
     private enum WizardSubclass
     {

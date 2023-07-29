@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cleric : TowerBase
+public class Cleric : MonoBehaviour
 {
     private enum ClericSubclass
     {

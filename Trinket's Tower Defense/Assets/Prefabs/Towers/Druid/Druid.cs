@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DruidClass : MonoBehaviour
+public class Druid : MonoBehaviour
 {
     private enum DruidSubclass
     {

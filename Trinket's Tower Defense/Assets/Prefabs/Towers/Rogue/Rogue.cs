@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rogue : TowerBase
+public class Rogue : MonoBehaviour
 {
     private enum RogueSubclass
     {

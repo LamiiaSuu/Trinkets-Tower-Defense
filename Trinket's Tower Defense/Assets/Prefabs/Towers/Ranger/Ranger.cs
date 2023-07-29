@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ranger : TowerBase
+public class Ranger : MonoBehaviour
 {
     private enum RangerSubclass
     {
